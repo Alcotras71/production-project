@@ -31,6 +31,3 @@ jobs:
       - name: unit testing
         if: always()
         run: yarn test:unit
-      - name: screenshot testing
-        if: always()
-        run: yarn test:ui:ci

@@ -42,7 +42,8 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
             );
         }
 
-        return children;
+        // eslint-disable-next-line react/jsx-no-useless-fragment
+        return <>{children}</>;
     }
 }
 

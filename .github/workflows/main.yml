@@ -20,12 +20,17 @@ jobs:
       - name: install modules
         run: yarn install
       - name: build production project
+        if: always()
         run: yarn build:prod
       - name: linting typescript
+        if: always()
         run: yarn lint:ts
       - name: linting css
+        if: always()
         run: yarn lint:scss
       - name: unit testing
+        if: always()
         run: yarn test:unit
       - name: screenshot testing
+        if: always()
         run: yarn test:ui:ci

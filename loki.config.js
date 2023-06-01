@@ -12,5 +12,4 @@ module.exports = {
             preset: 'iPhone 7',
         },
     },
-    fetchFailIgnore: 'localhost:1234/get',
 };

@@ -8,5 +8,7 @@
   "Главная": "Main",
   "Переключить": "Switch",
   "Короткий язык": "En",
-  "Войти": "Войти"
+  "Войти": "Войти",
+  "increment": "increment",
+  "decrement": "decrement"
 }

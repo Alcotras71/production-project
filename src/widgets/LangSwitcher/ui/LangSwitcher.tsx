@@ -22,7 +22,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className, short }) => {
             theme={ButtonTheme.CLEAR}
             onClick={toggle}
         >
-            {t(short ? 'Короткий язык' : 'Язык')}
+            {short ? t('Короткий язык') : t('Язык')}
         </Button>
     );
 };

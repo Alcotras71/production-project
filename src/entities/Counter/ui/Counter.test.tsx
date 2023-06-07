@@ -3,6 +3,8 @@ import { fireEvent, screen } from '@testing-library/react';
 import { componentRender } from 'shared/lib/tests/componentRender/componentRender';
 import { Counter } from './Counter';
 
+jest.mock('axios');
+
 describe('Counter', () => {
     test('test render', () => {
         componentRender(<Counter />, {

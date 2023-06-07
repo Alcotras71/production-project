@@ -8,9 +8,12 @@
   "Главная": "Main",
   "Переключить": "Switch",
   "Короткий язык": "En",
-  "Войти": "Enter",
+  "Войти": "Login",
   "increment": "increment",
   "decrement": "decrement",
   "Введите пароль": "Enter password",
-  "Введите username": "Enter username"
+  "Введите username": "Enter username",
+  "Форма авторизации": "Auth form",
+  "Вы ввели неверный логин или пароль": "Incorrect login or password",
+  "Выйти": "Выйти"
 }

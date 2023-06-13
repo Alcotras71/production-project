@@ -1,36 +1,36 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server",
       "author": "typeicode"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "json-sd",
       "author": "typeicode"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "json-hhh",
       "author": "typeicode"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "json-rrr",
       "author": "typeicode"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
-      "postId": 1
+      "postId": "1"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "123"
     }

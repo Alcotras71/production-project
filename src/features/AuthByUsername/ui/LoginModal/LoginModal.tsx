@@ -6,17 +6,13 @@ import { Loader } from 'shared/ui/Loader/Loader';
 import { LoginFormAsync } from '../LoginForm/LoginForm.async';
 
 interface LoginModalProps {
-    className?: string;
-    isOpen?: boolean;
-    onClose?: () => void;
+  className?: string;
+  isOpen?: boolean;
+  onClose?: () => void;
 }
 
 export const LoginModal: FC<LoginModalProps> = (props) => {
-    const {
-        className,
-        isOpen,
-        onClose,
-    } = props;
+    const { className, isOpen, onClose } = props;
 
     return (
         <Modal
@@ -26,7 +22,7 @@ export const LoginModal: FC<LoginModalProps> = (props) => {
             lazy
         >
             <Suspense fallback={<Loader />}>
-                <LoginFormAsync />
+                <LoginFormAsync onSuccess={onClose} />
             </Suspense>
         </Modal>
     );

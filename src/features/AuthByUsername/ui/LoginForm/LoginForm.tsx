@@ -28,7 +28,7 @@ import cls from './LoginForm.module.scss';
 
 export interface LoginFormProps {
     className?: string;
-    onSuccess: () => void;
+    onSuccess?: () => void;
 }
 
 const initialReducers: ReducersList = {
@@ -59,7 +59,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
                 password,
             }));
             if (result.meta.requestStatus === 'fulfilled') {
-                onSuccess();
+                onSuccess?.();
             }
         },
         [dispatch, onSuccess, password, username],

@@ -1,8 +1,6 @@
-import type { CounterSchema } from 'entities/Counter';
 import type { UserSchema } from 'entities/User';
 import type { LoginSchema } from 'features/AuthByUsername';
 import {
-    Action,
     AnyAction,
     CombinedState,
     EnhancedStore,
@@ -12,10 +10,8 @@ import {
 import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
 import { NavigateFunction } from 'react-router/dist/lib/hooks';
-import { Dispatch } from 'redux';
 
 export interface StateSchema {
-  counter: CounterSchema;
   user: UserSchema;
 
   // Async reducers
@@ -44,4 +40,5 @@ export interface ThunkExtraArg {
 export interface ThunkConfig<T> {
   rejectValue: T;
   extra: ThunkExtraArg;
+  state: StateSchema;
 }

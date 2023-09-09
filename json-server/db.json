@@ -36,13 +36,13 @@
     }
   ],
   "profile": {
-    "firstname": "Andrey",
-    "lastname": "Alekseev",
+    "firstname": "Andrey123",
+    "lastname": "Alekseev123",
     "age": 25,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
-    "username": "admin",
+    "currency": "USD",
+    "country": "Kazakhstan",
+    "city": "Athens city",
+    "username": "admin_pro",
     "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
   }
 }

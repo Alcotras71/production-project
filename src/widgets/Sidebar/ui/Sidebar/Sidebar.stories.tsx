@@ -9,7 +9,11 @@ const meta: Meta<typeof Sidebar> = {
     title: 'widget/Sidebar',
     component: Sidebar,
     tags: ['autodocs'],
-    decorators: [StoreDecorator({})],
+    decorators: [
+        StoreDecorator({
+            user: { authData: {} },
+        }),
+    ],
 };
 
 export default meta;
@@ -23,4 +27,13 @@ export const Light: Story = {
 export const Dark: Story = {
     args: {},
     decorators: [ThemeDecorator(Theme.DARK)],
+};
+
+export const NoAuth: Story = {
+    args: {},
+    decorators: [
+        StoreDecorator({
+            user: {},
+        }),
+    ],
 };

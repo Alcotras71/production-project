@@ -545,6 +545,48 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test comment mode",
+      "id": "WFcpGa1"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "something",
+      "id": "CjjQyZN"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "hello",
+      "id": "ywcDmQW"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "hello",
+      "id": "T1mWINc"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Noc",
+      "id": "O3L3abk"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "fin",
+      "id": "5uPLsVd"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "fieldSupport",
+      "id": "2WcY9yf"
     }
   ],
   "users": [
@@ -563,14 +605,28 @@
       "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
     }
   ],
-  "profile": {
-    "firstname": "Andrey123",
-    "lastname": "Alekseev123",
-    "age": 25,
-    "currency": "USD",
-    "country": "Kazakhstan",
-    "city": "Athens city",
-    "username": "admin_pro",
-    "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "AndreySuperAdmin",
+      "lastname": "AlekseevAdmin",
+      "age": 25,
+      "currency": "USD",
+      "country": "Kazakhstan",
+      "city": "Athens city",
+      "username": "admin_pro",
+      "avatar": "https://static.vecteezy.com/system/resources/previews/005/076/592/non_2x/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg"
+    },
+    {
+      "id": "2",
+      "firstname": "AndreyUser",
+      "lastname": "AlekseevUser",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Athens city",
+      "username": "simple_user",
+      "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
+    }
+  ]
 }

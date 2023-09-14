@@ -6,7 +6,7 @@ import AvatarImg from 'shared/assets/tests/storybook.jpg';
 import { ProfileCard } from './ProfileCard';
 
 const meta: Meta<typeof ProfileCard> = {
-    title: 'entities/ProfileCard',
+    title: 'entities/Profile/ProfileCard',
     component: ProfileCard,
     tags: ['autodocs'],
 };

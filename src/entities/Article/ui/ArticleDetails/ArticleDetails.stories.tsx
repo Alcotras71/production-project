@@ -15,6 +15,11 @@ const article: Article = {
     type: [
         ArticleType.IT,
     ],
+    user: {
+        id: '1',
+        avatar: '',
+        username: 'Andrey',
+    },
     blocks: [
         {
             id: '1',
@@ -78,7 +83,7 @@ const article: Article = {
 };
 
 const meta: Meta<typeof ArticleDetails> = {
-    title: 'entities/ArticleDetails',
+    title: 'entities/Article/ArticleDetails',
     component: ArticleDetails,
     tags: ['autodocs'],
     decorators: [StoreDecorator({

@@ -1,7 +1,5 @@
 import { StateSchema } from 'app/providers/StoreProvider';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import { getArticleDetailsError, getArticleDetailsData, getArticleDetailsIsLoading } from './articleDetails';
+import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from './articleDetails';
 
 describe('articleDetailsSelectors.test', () => {
     test('should return data', () => {

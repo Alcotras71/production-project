@@ -1,0 +1,10 @@
+.notSelected {
+    fill: var(--secondary-color);
+}
+
+.button {
+    &.selected {
+        pointer-events: none;
+        cursor: auto;
+    }
+}

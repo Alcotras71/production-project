@@ -1,7 +1,7 @@
 import { FC, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import {
     DynamicModuleLoader,
     ReducersList,

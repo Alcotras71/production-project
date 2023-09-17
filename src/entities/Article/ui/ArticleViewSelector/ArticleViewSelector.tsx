@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { ArticleView } from 'entities/Article';
 import ListIcon from 'shared/assets/icons/list-24-24.svg';
 import TileIcon from 'shared/assets/icons/tiled-24-24.svg';

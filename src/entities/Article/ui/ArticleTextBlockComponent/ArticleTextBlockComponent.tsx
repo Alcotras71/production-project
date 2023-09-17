@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from 'shared/lib/helpers/classNames/classNames';
 
 import { ArticleTextBlock } from 'entities/Article/model/types/article';
 import { Text } from 'shared/ui/Text/Text';

@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { HTMLAttributeAnchorTarget, memo } from 'react';
 
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 
@@ -14,6 +14,7 @@ interface ArticleListProps {
   articles: Article[];
   isLoading?: boolean;
   view?: ArticleView;
+  target?: HTMLAttributeAnchorTarget;
 }
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
@@ -25,11 +26,16 @@ const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL
 export const ArticleList = memo((props: ArticleListProps) => {
     const { t } = useTranslation();
     const {
-        className, view = ArticleView.SMALL, articles, isLoading,
+        className,
+        view = ArticleView.SMALL,
+        articles,
+        isLoading,
+        target,
     } = props;
 
     const renderArticle = (article: Article) => (
         <ArticleListItem
+            target={target}
             className={cls.card}
             key={article.id}
             article={article}

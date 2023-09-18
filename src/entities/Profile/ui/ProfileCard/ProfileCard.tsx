@@ -10,7 +10,7 @@ import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { CurrencySelect, Currency } from 'entities/Currency';
 import { Country, CountrySelect } from 'entities/Country';
 import cls from './ProfileCard.module.scss';
-import { Profile } from '../../model/types/Profile';
+import { Profile } from '../../model/types/profile';
 
 interface ProfileCardProps {
   className?: string;

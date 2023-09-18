@@ -9,12 +9,16 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        fallbackLng: 'ru',
+        fallbackLng: 'en',
         // debug: __IS_DEV__,
         debug: false,
 
         interpolation: {
             escapeValue: false,
+        },
+
+        backend: {
+            loadPath: '/locales/{{lng}}/{{ns}}.json',
         },
     });
 

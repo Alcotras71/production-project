@@ -27,7 +27,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.SECONDARY,
+        theme: AppLinkTheme.INVERTED,
     },
 };
 
@@ -49,7 +49,7 @@ export const PrimaryDark: Story = {
 export const SecondaryDark: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.SECONDARY,
+        theme: AppLinkTheme.INVERTED,
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };

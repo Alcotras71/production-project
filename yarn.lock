@@ -6126,6 +6126,13 @@ eslint-plugin-es@^4.1.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
+eslint-plugin-fsd-plugin-alcotras@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-fsd-plugin-alcotras/-/eslint-plugin-fsd-plugin-alcotras-0.0.2.tgz#62f2df5b273c275d906d076b0ced2242c511e844"
+  integrity sha512-BcsdByZ7VJR0jKAFfh5c4aloPXJ2blTp8kX+0Sjn7OQxf20SIwZ7wmN9aHfi3pnY1rsC+X6eZvWc8KoNW7seqg==
+  dependencies:
+    requireindex "^1.2.0"
+
 eslint-plugin-i18next@^5.1.2:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-i18next/-/eslint-plugin-i18next-5.2.1.tgz#9ce619f4958e9c58c70e4900585ec3b1c8065614"
@@ -10700,7 +10707,7 @@ require-from-string@^2.0.2:
   resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
 
-requireindex@^1.1.0:
+requireindex@^1.1.0, requireindex@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
   integrity sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==

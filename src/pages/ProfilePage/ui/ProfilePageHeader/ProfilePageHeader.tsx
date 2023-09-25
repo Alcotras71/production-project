@@ -14,7 +14,7 @@ import {
 } from 'entities/Profile';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { getUserAuthData } from 'entities/User';
-import cls from './ProfilePageHeader.module.scss';
+import { HStack } from 'shared/ui/Stack/HStack/HStack';
 
 interface ProfilePageHeaderProps {
   className?: string;
@@ -45,38 +45,31 @@ export const ProfilePageHeader: FC<ProfilePageHeaderProps> = ({
     }, [dispatch]);
 
     return (
-        <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
+        <HStack max justify="between" className={classNames('', {}, [className])}>
             <Text title={t('Профиль')} />
-            {canEdit && (
-                <div className={cls.btnsWrapper}>
-                    {readonly ? (
-                        <Button
-                            className={cls.editBtn}
-                            theme={ButtonTheme.OUTLINE}
-                            onClick={onEdit}
-                        >
-                            {t('Редактировать')}
-                        </Button>
-                    ) : (
-                        <>
-                            <Button
-                                className={cls.editBtn}
-                                theme={ButtonTheme.OUTLINE_RED}
-                                onClick={onCancelEdit}
-                            >
-                                {t('Отменить')}
-                            </Button>
-                            <Button
-                                className={cls.saveBtn}
-                                theme={ButtonTheme.OUTLINE}
-                                onClick={onSave}
-                            >
-                                {t('Сохранить')}
-                            </Button>
-                        </>
-                    )}
-                </div>
+            {canEdit && readonly ? (
+                <Button
+                    theme={ButtonTheme.OUTLINE}
+                    onClick={onEdit}
+                >
+                    {t('Редактировать')}
+                </Button>
+            ) : (
+                <HStack gap="8">
+                    <Button
+                        theme={ButtonTheme.OUTLINE_RED}
+                        onClick={onCancelEdit}
+                    >
+                        {t('Отменить')}
+                    </Button>
+                    <Button
+                        theme={ButtonTheme.OUTLINE}
+                        onClick={onSave}
+                    >
+                        {t('Сохранить')}
+                    </Button>
+                </HStack>
             )}
-        </div>
+        </HStack>
     );
 };

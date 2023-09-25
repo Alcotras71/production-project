@@ -29,9 +29,12 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
-        'react/jsx-filename-extension': [2, {
-            extensions: ['.js', '.jsx', '.tsx'],
-        }],
+        'react/jsx-filename-extension': [
+            2,
+            {
+                extensions: ['.js', '.jsx', '.tsx'],
+            },
+        ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'off',
@@ -44,14 +47,28 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': ['error', {
-            markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'target'],
-        }],
-        'max-len': ['error', {
-            ignoreComments: true,
-            code: 125,
-        }],
+        'i18next/no-literal-string': [
+            'error',
+            {
+                markupOnly: true,
+                ignoreAttribute: [
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'direction',
+                    'gap',
+                ],
+            },
+        ],
+        'max-len': [
+            'error',
+            {
+                ignoreComments: true,
+                code: 125,
+            },
+        ],
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error',
@@ -67,11 +84,13 @@ module.exports = {
         __API__: true,
         __PROJECT__: true,
     },
-    overrides: [{
-        files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
-        rules: {
-            'i18next/no-literal-string': 'off',
-            'max-len': 'off',
+    overrides: [
+        {
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+                'max-len': 'off',
+            },
         },
-    }],
+    ],
 };

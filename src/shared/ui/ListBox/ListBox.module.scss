@@ -17,10 +17,26 @@
     border-right: 12px;
     box-shadow: 4px 4px 8px var(--listbox-bg);
     min-width: 100%;
+}
 
-    &.top {
-        bottom: 100%;
-    }
+.optionsBottomLeft {
+    top: 100%;
+    right: 0;
+}
+
+.optionsBottomRight {
+    top: 100%;
+    left: 0;
+}
+
+.optionsTopLeft {
+    bottom: 100%;
+    right: 0;
+}
+
+.optionsTopRight {
+    bottom: 100%;
+    left: 0;
 }
 
 .item {

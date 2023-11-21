@@ -2,6 +2,7 @@ import { Fragment, ReactNode } from 'react';
 import { Listbox as HListBox } from '@headlessui/react';
 
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
+import { DropdownDirection } from 'shared/types/ui';
 import { HStack } from '../Stack';
 import { Button, ButtonTheme } from '../Button/Button';
 import cls from './ListBox.module.scss';
@@ -11,8 +12,6 @@ export interface ListBoxItem {
   content: ReactNode;
   disabled?: boolean;
 }
-
-type DropdownDirection = 'top' | 'bottom';
 
 export interface ListBoxProps {
   items?: ListBoxItem[];
@@ -25,19 +24,26 @@ export interface ListBoxProps {
   label?: string;
 }
 
+const mapDirectionClass: Record<DropdownDirection, string> = {
+    'bottom left': cls.optionsBottomLeft,
+    'bottom right': cls.optionsBottomRight,
+    'top left': cls.optionsTopLeft,
+    'top right': cls.optionsTopRight,
+};
+
 export const ListBox = (props: ListBoxProps) => {
     const {
         items,
         label,
         className,
         onChange,
-        direction = 'bottom',
+        direction = 'bottom right',
         defaultValue,
         value,
         readonly,
     } = props;
 
-    const optionsClasses = [cls[direction]];
+    const optionsClasses = [mapDirectionClass[direction]];
 
     return (
         <HStack gap="4">

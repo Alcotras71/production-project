@@ -30,7 +30,7 @@ export const ProfilePageHeader: FC<ProfilePageHeaderProps> = ({
     const authData = useSelector(getUserAuthData);
     const profileData = useSelector(getProfileData);
 
-    const canEdit = authData?.id === profileData?.id;
+    const canEdit = Number(authData?.id) === Number(profileData?.id);
 
     const onEdit = useCallback(() => {
         dispatch(profileActions.setReadonly(false));
@@ -43,6 +43,10 @@ export const ProfilePageHeader: FC<ProfilePageHeaderProps> = ({
     const onSave = useCallback(() => {
         dispatch(updateProfileData());
     }, [dispatch]);
+
+    console.log({
+        canEdit, readonly, authData, profileData,
+    });
 
     return (
         <HStack max justify="between" className={classNames('', {}, [className])}>

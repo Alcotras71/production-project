@@ -86,6 +86,7 @@ module.exports = {
         __API__: true,
         __PROJECT__: true,
     },
+    ignorePatterns: ['scripts/createSlice/**/*'],
     overrides: [
         {
             files: ['**/src/**/*.{test,stories}.{ts,tsx}'],

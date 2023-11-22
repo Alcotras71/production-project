@@ -23,7 +23,8 @@
     "test:ui:ci": "concurrently -k --raw -s first \"yarn storybook\" \"yarn test:ui:git\" \"deelay\"",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:slice" : "node scripts/createSlice/index.js"
   },
   "keywords": [],
   "author": "",

@@ -29,7 +29,11 @@ export const CommentList = memo((props: CommentListProps) => {
     }
 
     return (
-        <VStack gap="16" max className={classNames('', {}, [className])}>
+        <VStack
+            gap="16"
+            max
+            className={classNames('', {}, [className])}
+        >
             {comments?.length ? (
                 comments.map((comment) => (
                     <CommentCard

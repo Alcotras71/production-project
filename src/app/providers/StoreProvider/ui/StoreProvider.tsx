@@ -22,7 +22,5 @@ export const StoreProvider: FC<StoreProviderProps> = (props) => {
     // navigate,
     );
 
-    console.log('RENDER');
-
     return <Provider store={store}>{children as JSX.Element}</Provider>;
 };

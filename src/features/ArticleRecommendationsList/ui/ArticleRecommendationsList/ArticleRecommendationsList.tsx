@@ -20,7 +20,7 @@ export const ArticleRecommendationsList = memo(
             error,
         } = useArticlesRecommendationsList(3);
 
-        if (isLoading || error) {
+        if (isLoading || error || !articles) {
             return null;
         }
 
@@ -31,6 +31,7 @@ export const ArticleRecommendationsList = memo(
                     articles={articles}
                     isLoading={isLoading}
                     target="_blank"
+                    virtualized={false}
                 />
             </VStack>
         );

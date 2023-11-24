@@ -5,9 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { Text, TextSize } from 'shared/ui/Text/Text';
 import { PAGE_ID } from 'shared/ui/Page/Page';
+import { ArticleView } from '../../model/constants/constants';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import cls from './ArticleList.module.scss';
-import { Article, ArticleView } from '../../model/types/article';
+import { Article } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 
 interface ArticleListProps {

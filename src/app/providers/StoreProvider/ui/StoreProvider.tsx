@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { Provider } from 'react-redux';
 import { ReducersMapObject } from '@reduxjs/toolkit';
 
@@ -9,6 +9,7 @@ import type { StateSchema } from 'app/providers/StoreProvider/types/StateSchema'
 interface StoreProviderProps {
   initialState?: DeepPartial<StateSchema>;
   asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>;
+  children: ReactNode;
 }
 
 export const StoreProvider: FC<StoreProviderProps> = (props) => {
@@ -22,5 +23,5 @@ export const StoreProvider: FC<StoreProviderProps> = (props) => {
     // navigate,
     );
 
-    return <Provider store={store}>{children as JSX.Element}</Provider>;
+    return <Provider store={store}>{children}</Provider>;
 };

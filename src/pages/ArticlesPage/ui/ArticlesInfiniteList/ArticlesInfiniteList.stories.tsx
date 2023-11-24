@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { ArticlesInfiniteList } from './ArticlesInfiniteList';
 
 const meta: Meta<typeof ArticlesInfiniteList> = {

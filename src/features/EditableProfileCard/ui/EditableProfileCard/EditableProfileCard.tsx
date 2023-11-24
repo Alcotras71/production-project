@@ -27,7 +27,7 @@ const reducers: ReducersList = {
     profile: profileReducer,
 };
 interface EditableProfileCardProps {
-  id: string;
+  id?: string;
   className?: string;
 }
 

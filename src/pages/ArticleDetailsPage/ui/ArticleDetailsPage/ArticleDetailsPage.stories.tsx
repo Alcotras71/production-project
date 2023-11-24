@@ -5,7 +5,7 @@ import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/arti
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
-const article: Article = {
+const articleWithBlocks: Article = {
     id: '1',
     title: 'Javascript news СВЕЖАЯ',
     subtitle: 'Что нового в JS за 2022 год?',
@@ -83,15 +83,43 @@ const article: Article = {
     ],
 };
 
+const article: Article = {
+    id: '1',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrlS9rsTMwXtbjkNQEaW25dBrii7izhaOh0w&usqp=CAU',
+    createdAt: '',
+    views: 123,
+    user: { id: '1', username: 'admin' },
+    blocks: [],
+    type: [],
+    title: '123',
+    subtitle: 'asdfg23',
+    userId: '1',
+};
+
 const meta: Meta<typeof ArticleDetailsPage> = {
     title: 'pages/ArticleDetailsPage/ArticleDetailsPage',
     component: ArticleDetailsPage,
     tags: ['autodocs'],
     decorators: [StoreDecorator({
         articleDetails: {
-            data: article,
+            data: articleWithBlocks,
         },
     })],
+    parameters: {
+        mockData: [
+            {
+                url: `${__API__}/articles?_limit=3`,
+                method: 'GET',
+                status: 200,
+                response: [
+                    { ...article, id: '1' },
+                    { ...article, id: '2' },
+                    { ...article, id: '3' },
+                    { ...article, id: '4' },
+                ],
+            },
+        ],
+    },
 };
 
 export default meta;

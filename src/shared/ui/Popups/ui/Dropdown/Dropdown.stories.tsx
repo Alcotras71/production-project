@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button, ButtonTheme } from '../Button/Button';
+import { Button, ButtonTheme } from '../../../Button/Button';
 import { Dropdown } from './Dropdown';
 
 const meta: Meta<typeof Dropdown> = {

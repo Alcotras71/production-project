@@ -1,9 +1,9 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArticleList } from 'entities/Article';
 import { useSelector } from 'react-redux';
-import { Text } from 'shared/ui/Text/Text';
-import { classNames } from 'shared/lib/helpers/classNames/classNames';
+import { ArticleList } from '@/entities/Article';
+import { Text } from '@/shared/ui/Text/Text';
+import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 import { getArticles } from '../../model/slices/articlesPageSlice';
 import {
     getArticlesPageError,

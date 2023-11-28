@@ -1,10 +1,10 @@
 import { FC } from 'react';
 
-import { classNames } from 'shared/lib/helpers/classNames/classNames';
-import { Page } from 'shared/ui/Page/Page';
-import { VStack } from 'shared/ui/Stack/VStack/VStack';
-import { EditableProfileCard } from 'features/EditableProfileCard';
 import { useParams } from 'react-router-dom';
+import { classNames } from '@/shared/lib/helpers/classNames/classNames';
+import { Page } from '@/shared/ui/Page/Page';
+import { VStack } from '@/shared/ui/Stack/VStack/VStack';
+import { EditableProfileCard } from '@/features/EditableProfileCard';
 
 interface ProfilePageProps {
   className?: string;

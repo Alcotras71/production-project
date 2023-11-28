@@ -2,7 +2,7 @@ import React, {
     FC, InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
 
-import { classNames, Mods } from 'shared/lib/helpers/classNames/classNames';
+import { classNames, Mods } from '@/shared/lib/helpers/classNames/classNames';
 
 import cls from './Input.module.scss';
 

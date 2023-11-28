@@ -2,9 +2,9 @@ import { FC, ReactNode } from 'react';
 import { Provider } from 'react-redux';
 import { ReducersMapObject } from '@reduxjs/toolkit';
 
-import { createReduxStore } from 'app/providers/StoreProvider/config/store';
+import { createReduxStore } from '@/app/providers/StoreProvider/config/store';
 
-import type { StateSchema } from 'app/providers/StoreProvider/types/StateSchema';
+import type { StateSchema } from '@/app/providers/StoreProvider/types/StateSchema';
 
 interface StoreProviderProps {
   initialState?: DeepPartial<StateSchema>;

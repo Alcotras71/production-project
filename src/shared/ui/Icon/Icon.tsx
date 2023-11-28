@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { classNames } from 'shared/lib/helpers/classNames/classNames';
+import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 
 import cls from './Icon.module.scss';
 

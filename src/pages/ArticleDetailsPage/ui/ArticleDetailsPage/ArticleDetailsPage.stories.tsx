@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Article, ArticleType } from 'entities/Article';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticleBlockType } from 'entities/Article/model/constants/constants';
+import { Article, ArticleType } from '@/entities/Article';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+import { ArticleBlockType } from '@/entities/Article/model/constants/constants';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 const articleWithBlocks: Article = {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Article } from 'entities/Article';
+import { Article } from '@/entities/Article';
 import ArticlesPage from './ArticlesPage';
 
 const article: Article = {

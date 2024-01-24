@@ -7898,11 +7898,12 @@
     "eslint-utils" "^2.0.0"
     "regexpp" "^3.0.0"
 
-"eslint-plugin-fsd-plugin-alcotras@^0.0.4":
-  "integrity" "sha512-cCVGaggxy3hBJcrizinj0bTjvLD8FGxCW0cMVA5PPe4yCvwBs8y0IzGSlFXrEKxRVGQMuFkqxxqxaqlgbs46zA=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-fsd-plugin-alcotras/-/eslint-plugin-fsd-plugin-alcotras-0.0.4.tgz"
-  "version" "0.0.4"
+"eslint-plugin-fsd-plugin-alcotras@^0.0.5":
+  "integrity" "sha512-hMnZAY7m7Q3GD3M2nus9uXoZwXLFLimIy3RyyFRr24lhP7PPo8/ozZt9XVIdjsPC2np6aP58SNpklsdn8CrN1g=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-fsd-plugin-alcotras/-/eslint-plugin-fsd-plugin-alcotras-0.0.5.tgz"
+  "version" "0.0.5"
   dependencies:
+    "micromatch" "^4.0.5"
     "requireindex" "^1.2.0"
 
 "eslint-plugin-i18next@^5.1.2":

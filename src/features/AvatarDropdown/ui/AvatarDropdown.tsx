@@ -15,7 +15,6 @@ import {
 interface AvatarDropdownProps {
   className?: string;
 }
-
 export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
     const { className } = props;
     const dispatch = useDispatch();

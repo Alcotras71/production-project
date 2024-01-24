@@ -1,3 +1,4 @@
+export { articleDetailsReducer } from './model/slice/articleDetailsSlice';
 export {
     getArticleDetailsData,
     getArticleDetailsIsLoading,
@@ -8,8 +9,8 @@ export { ArticleList } from './ui/ArticleList/ArticleList';
 export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelector';
 export { ArticleViewSelector } from './ui/ArticleViewSelector/ArticleViewSelector';
-export { ArticleView } from '@/entities/Article/model/constants/constants';
-export { ArticleType } from '@/entities/Article/model/constants/constants';
-export { ArticleSortField } from '@/entities/Article/model/constants/constants';
+export {
+    ArticleView, ArticleType, ArticleBlockType, ArticleSortField,
+} from './model/constants/constants';
 export type { Article } from './model/types/article';
 export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';

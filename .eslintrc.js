@@ -81,6 +81,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'fsd-plugin-alcotras/path-checker': ['error', { alias: '@' }],
+        'fsd-plugin-alcotras/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider'],
+            },
+        ],
         'fsd-plugin-alcotras/public-api-imports': [
             'error',
             {

@@ -5,10 +5,10 @@ import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
 import { ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { loginReducer } from '@/features/AuthByUsername/testing';
 import { articleDetailsReducer } from '@/entities/Article/testing';
-import { addCommentFormReducer } from '@/features/AddCommentForm/testing';
 import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/testing';
-import { profileReducer } from '@/features/EditableProfileCard/testing';
 import { articlesPageReducer } from '@/pages/ArticlesPage/testing';
+import { addCommentFormReducer } from '@/features/addCommentForm/testing';
+import { profileReducer } from '@/features/editableProfileCard/testing';
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,

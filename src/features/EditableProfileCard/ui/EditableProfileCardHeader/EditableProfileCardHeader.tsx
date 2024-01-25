@@ -10,9 +10,9 @@ import { HStack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text/Text';
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
-import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
-import { profileActions } from '../../model/slice/profileSlice';
 import { updateProfileData } from '../../model/services/updateProfileData/updateProfileData';
+import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
+import { profileActions } from '../../testing';
 
 interface EditableProfileCardHeaderProps {
   className?: string;

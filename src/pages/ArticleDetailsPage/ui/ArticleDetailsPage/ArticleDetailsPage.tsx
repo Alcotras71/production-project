@@ -10,12 +10,12 @@ import {
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { Page } from '@/shared/ui/Page/Page';
 import { VStack } from '@/shared/ui/Stack';
-import { ArticleRecommendationsList } from '@/features/ArticleRecommendationsList';
 import { ArticleDetailsComments } from '../ArticleDetailsComments/ArticleDetailsComments';
 import { articleDetailsPageReducer } from '../../model/slices';
 import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { ArticleRating } from '@/features/articleRating';
 import cls from './ArticleDetailsPage.module.scss';
+import { ArticleRecommendationsList } from '@/features/articleRecommendationsList';
 
 interface ArticleDetailsPageProps {
   className?: string;

@@ -8115,10 +8115,10 @@ eslint-plugin-es@^4.1.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-fsd-plugin-alcotras@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-fsd-plugin-alcotras/-/eslint-plugin-fsd-plugin-alcotras-0.0.7.tgz#16fdec44c463b356c92d3805ae02e164f41a9b60"
-  integrity sha512-HnxzGcBmh9rJgRZ/XEl9ZURzmmfoJxUFC51HSkWg+3NmMx0jmrl0dNtu8cp/Zrl4jBFWhwqZFbFn8OoVUqk2Aw==
+eslint-plugin-fsd-plugin-alcotras@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-fsd-plugin-alcotras/-/eslint-plugin-fsd-plugin-alcotras-0.0.8.tgz#aa05029f1dcb62d5f2fecd249578f6b78378d462"
+  integrity sha512-sT+bPRlsAe7kLg4D3AvTDvY5jASQq5/M+oAG9CnrCpUit9/+HK2p4h3FPIZlX+7nP+FklkOqXbj6lGjxvND+pw==
   dependencies:
     micromatch "^4.0.5"
     requireindex "^1.2.0"

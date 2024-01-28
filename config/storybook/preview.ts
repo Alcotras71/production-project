@@ -18,6 +18,14 @@ const preview: Preview = {
             },
         },
         layout: 'fullscreen',
+        themes: {
+            default: 'dark',
+            list: [
+                { name: 'light', class: Theme.LIGHT, color: '#edf8ff' },
+                { name: 'dark', class: Theme.DARK, color: '#000303' },
+                { name: 'orange', class: Theme.ORANGE, color: '#d79011' },
+            ],
+        },
     },
     decorators: [
         StyleDecorator,

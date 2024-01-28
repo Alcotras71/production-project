@@ -1,5 +1,4 @@
-import { memo, ReactNode } from 'react';
-import { useTranslation } from 'react-i18next';
+import { ReactNode } from 'react';
 import { Popover as HPopover } from '@headlessui/react';
 
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';

@@ -2,8 +2,8 @@ import { FC } from 'react';
 
 import { useParams } from 'react-router-dom';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
-import { Page } from '@/shared/ui/Page/Page';
-import { VStack } from '@/shared/ui/Stack/VStack/VStack';
+import { Page } from '@/shared/ui/Page';
+import { VStack } from '@/shared/ui/Stack';
 import { EditableProfileCard } from '@/features/editableProfileCard';
 
 interface ProfilePageProps {

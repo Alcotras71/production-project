@@ -6,6 +6,7 @@ import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorat
 import { StoreDecorator } from '../../src/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { SuspenseDecorator } from '../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator';
 import { Theme } from '../../src/shared/const/theme';
+import { PaddingDecorator } from '../../src/shared/config/storybook/PaddingDecorator/PaddingDecorator';
 
 const preview: Preview = {
     parameters: {
@@ -16,6 +17,7 @@ const preview: Preview = {
                 date: /Date$/,
             },
         },
+        layout: 'fullscreen',
     },
     decorators: [
         StyleDecorator,
@@ -23,6 +25,7 @@ const preview: Preview = {
         RouterDecorator,
         SuspenseDecorator,
         StoreDecorator({}),
+        PaddingDecorator,
     ],
 };
 

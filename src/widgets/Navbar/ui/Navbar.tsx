@@ -9,9 +9,9 @@ import { Text, TextTheme } from '@/shared/ui/Text';
 import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink';
 import { HStack } from '@/shared/ui/Stack';
 import cls from './Navbar.module.scss';
-import { RoutePath } from '@/shared/const/router';
 import { AvatarDropdown } from '@/features/avatarDropdown';
 import { NotificationButton } from '@/features/notificationButton';
+import { getRouteArticleCreate } from '@/shared/const/router';
 
 interface NavbarProps {
   className?: string;
@@ -43,7 +43,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                 <AppLink
                     className={cls.createBtn}
                     theme={AppLinkTheme.INVERTED}
-                    to={RoutePath.article_create}
+                    to={getRouteArticleCreate()}
                 >
                     {t('Создать статью')}
                 </AppLink>

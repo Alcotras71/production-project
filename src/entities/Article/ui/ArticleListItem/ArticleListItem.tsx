@@ -18,6 +18,8 @@ import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleT
 import { Article, ArticleTextBlock } from '../../model/types/article';
 import cls from './ArticleListItem.module.scss';
 import { getRouteArticleDetails } from '@/shared/const/router';
+import { AppImage } from '@/shared/ui/AppImage';
+import { Skeleton } from '@/shared/ui/Skeleton';
 
 interface ArticleListItemProps {
   className?: string;
@@ -60,7 +62,13 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                     </div>
                     <Text className={cls.title} title={article.title} />
                     <Types type={article.type} />
-                    <img className={cls.img} src={article.img} alt={article.title} />
+                    <AppImage
+                        fallback={<Skeleton width="100%" height={250} />}
+                        errorFallback={<Skeleton width="100%" height={250} />}
+                        className={cls.img}
+                        src={article.img}
+                        alt={article.title}
+                    />
                     {textBlock && (
                         <ArticleTextBlockComponent
                             className={cls.textBlock}
@@ -68,10 +76,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                         />
                     )}
                     <div className={cls.footer}>
-                        <AppLink
-                            target={target}
-                            to={getRouteArticleDetails(article.id)}
-                        >
+                        <AppLink target={target} to={getRouteArticleDetails(article.id)}>
                             <Button theme={ButtonTheme.OUTLINE}>
                                 {t('Читать далее...')}
                             </Button>
@@ -91,7 +96,13 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
         >
             <Card className={cls.card}>
                 <div className={cls.imageWrapper}>
-                    <img className={cls.img} src={article.img} alt={article.title} />
+                    <AppImage
+                        fallback={<Skeleton width={200} height={200} />}
+                        errorFallback={<Skeleton width={200} height={200} />}
+                        className={cls.img}
+                        src={article.img}
+                        alt={article.title}
+                    />
                     <Text className={cls.date} text={article.createdAt} />
                 </div>
                 <div className={cls.infoWrapper}>

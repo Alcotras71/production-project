@@ -2,8 +2,7 @@ import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
-import { Avatar } from '@/shared/ui/Avatar/Avatar';
+import { Avatar } from '@/shared/ui/Avatar';
 import { Dropdown } from '@/shared/ui/Popups';
 import {
     getIsUserAdmin,
@@ -11,11 +10,11 @@ import {
     getUserAuthData,
     userActions,
 } from '@/entities/User';
+import { getRouteAdmin, getRouteProfileDetails } from '@/shared/const/router';
 
 interface AvatarDropdownProps {
   className?: string;
 }
-
 export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
     const { className } = props;
     const dispatch = useDispatch();
@@ -43,13 +42,13 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                     ? [
                         {
                             content: t('Админка'),
-                            href: RoutePath.admin_panel,
+                            href: getRouteAdmin(),
                         },
                     ]
                     : []),
                 {
                     content: t('Профиль'),
-                    href: `${RoutePath.profile_details}${authData.id}`,
+                    href: getRouteProfileDetails(authData.id),
                 },
                 {
                     content: t('Выйти'),

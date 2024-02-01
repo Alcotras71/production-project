@@ -9,6 +9,7 @@ module.exports = {
         'airbnb',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
+        'plugin:import/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -24,10 +25,17 @@ module.exports = {
         'i18next',
         'react-hooks',
         'fsd-plugin-alcotras',
+        'unused-imports',
+        'import',
     ],
     rules: {
+        'import/named': 2,
+        'import/namespace': 2,
+        'import/default': 2,
+        'import/export': 2,
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
+        'unused-imports/no-unused-imports': 'error',
         indent: [2, 4],
         'react/jsx-filename-extension': [
             2,
@@ -80,7 +88,21 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'fsd-plugin-alcotras/path-checker': 'error',
+        'fsd-plugin-alcotras/path-checker': ['error', { alias: '@' }],
+        'fsd-plugin-alcotras/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider'],
+            },
+        ],
+        'fsd-plugin-alcotras/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,

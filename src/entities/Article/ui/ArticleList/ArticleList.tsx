@@ -1,10 +1,8 @@
 import { HTMLAttributeAnchorTarget, memo } from 'react';
-import { List, ListRowProps, WindowScroller } from 'react-virtualized';
 import { useTranslation } from 'react-i18next';
 
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
-import { Text, TextSize } from '@/shared/ui/Text/Text';
-import { PAGE_ID } from '@/shared/ui/Page/Page';
+import { Text, TextSize } from '@/shared/ui/Text';
 import { ArticleView } from '../../model/constants/constants';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import { Article } from '../../model/types/article';

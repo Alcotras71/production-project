@@ -1,28 +1,17 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
-
+import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
+import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { LoginModal } from '@/features/AuthByUsername';
-import {
-    getIsUserAdmin,
-    getIsUserManager,
-    getUserAuthData,
-    userActions,
-} from '@/entities/User';
-
-import { Text, TextTheme } from '@/shared/ui/Text/Text';
-import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink/AppLink';
-import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
-import { Dropdown } from '@/shared/ui/Popups';
-import { Avatar } from '@/shared/ui/Avatar/Avatar';
+import { getUserAuthData } from '@/entities/User';
+import { Text, TextTheme } from '@/shared/ui/Text';
+import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink';
 import { HStack } from '@/shared/ui/Stack';
-import { NotificationButton } from '@/features/NotificationButton';
-import { AvatarDropdown } from '@/features/AvatarDropdown';
-import { Drawer } from '@/shared/ui/Drawer/Drawer';
-import { NotificationList } from '@/entities/Notification';
 import cls from './Navbar.module.scss';
+import { AvatarDropdown } from '@/features/avatarDropdown';
+import { NotificationButton } from '@/features/notificationButton';
+import { getRouteArticleCreate } from '@/shared/const/router';
 
 interface NavbarProps {
   className?: string;
@@ -54,7 +43,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                 <AppLink
                     className={cls.createBtn}
                     theme={AppLinkTheme.INVERTED}
-                    to={RoutePath.article_create}
+                    to={getRouteArticleCreate()}
                 >
                     {t('Создать статью')}
                 </AppLink>

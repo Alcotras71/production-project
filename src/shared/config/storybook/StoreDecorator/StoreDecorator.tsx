@@ -3,12 +3,12 @@ import { ReducersMapObject } from '@reduxjs/toolkit';
 
 import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
 import { ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { loginReducer } from '@/features/AuthByUsername/model/slice/loginSlice';
-import { articleDetailsReducer } from '@/entities/Article/model/slice/articleDetailsSlice';
-import { addCommentFormReducer } from '@/features/AddCommentForm/model/slice/addCommentFormSlice';
-import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage';
-import { profileReducer } from '@/features/EditableProfileCard/model/slice/profileSlice';
-import { articlesPageReducer } from '@/pages/ArticlesPage/model/slices/articlesPageSlice';
+import { loginReducer } from '@/features/AuthByUsername/testing';
+import { articleDetailsReducer } from '@/entities/Article/testing';
+import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/testing';
+import { articlesPageReducer } from '@/pages/ArticlesPage/testing';
+import { addCommentFormReducer } from '@/features/addCommentForm/testing';
+import { profileReducer } from '@/features/editableProfileCard/testing';
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,

@@ -6,7 +6,7 @@ import {
 } from '../services/fetchArticleRecommendations/fetchArticleRecommendations';
 import { ArticleDetailsRecommendationsSchema } from '../types/ArticleDetailsRecommendationsSchema';
 
-const recommendationsAdapter = createEntityAdapter<Article>({
+const recommendationsAdapter = createEntityAdapter<Article, string>({
     selectId: (article) => article.id,
 });
 

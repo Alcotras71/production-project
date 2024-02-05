@@ -1,3 +1,4 @@
+import { UnknownAction } from '@reduxjs/toolkit';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import { ValidateProfileError } from '../constants/constants';
@@ -78,8 +79,8 @@ describe('profileSlice.test', () => {
         };
         expect(
             profileReducer(
-                state as ProfileSchema,
-                updateProfileData.pending,
+            state as ProfileSchema,
+            updateProfileData.pending as unknown as UnknownAction,
             ),
         ).toEqual({
             isLoading: true,

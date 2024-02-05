@@ -1,11 +1,9 @@
 import { AxiosInstance } from 'axios';
 
 import {
-    AnyAction,
-    CombinedState,
     EnhancedStore,
     Reducer,
-    ReducersMapObject,
+    ReducersMapObject, UnknownAction,
 } from '@reduxjs/toolkit';
 import type { UserSchema } from '@/entities/User';
 import type { LoginSchema } from '@/features/AuthByUsername';
@@ -36,7 +34,10 @@ export type MountedReducers = OptionalRecord<StateSchemaKey, boolean>;
 
 export interface ReducerManager {
   getReducerMap: () => ReducersMapObject<StateSchema>;
-  reduce: (state: StateSchema, action: AnyAction) => CombinedState<StateSchema>;
+  reduce: (
+    state: StateSchema,
+    action: UnknownAction
+  ) => any;
   add: (key: StateSchemaKey, reducer: Reducer) => void;
   remove: (key: StateSchemaKey) => void;
   // true - mounted, false - unmounted

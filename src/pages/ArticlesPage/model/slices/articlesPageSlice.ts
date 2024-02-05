@@ -15,7 +15,7 @@ import { SortOrder } from '@/shared/types/sort';
 import { fetchArticlesList } from '../services/fetchArticlesList/fetchArticlesList';
 import { ArticlesPageSchema } from '../types/articlesPageSchema';
 
-const articlesAdapter = createEntityAdapter<Article>({
+const articlesAdapter = createEntityAdapter<Article, string>({
     selectId: (article) => article.id,
 });
 

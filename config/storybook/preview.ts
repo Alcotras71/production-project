@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react';
-
+import { initialize, mswLoader } from 'msw-storybook-addon';
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
@@ -7,6 +7,9 @@ import { StoreDecorator } from '../../src/shared/config/storybook/StoreDecorator
 import { SuspenseDecorator } from '../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator';
 import { Theme } from '../../src/shared/const/theme';
 import { PaddingDecorator } from '../../src/shared/config/storybook/PaddingDecorator/PaddingDecorator';
+
+// Initialize MSW
+initialize();
 
 const preview: Preview = {
     parameters: {
@@ -35,6 +38,7 @@ const preview: Preview = {
         StoreDecorator({}),
         PaddingDecorator,
     ],
+    loaders: [mswLoader],
 };
 
 export default preview;
